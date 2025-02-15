@@ -21,3 +21,14 @@ export default defineConfig({
     emptyOutDir: true,
   },
 });
+
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [react()],
+  base: './',  // WICHTIG für das Deployment
+  build: {
+    outDir: 'dist'  // Das ist der Ordner, den Vercel benötigt
+  }
+})
