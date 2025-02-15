@@ -32,3 +32,7 @@ export default defineConfig({
     outDir: 'dist'  // Das ist der Ordner, den Vercel benötigt
   }
 })
+
+module.exports = {
+  output: 'standalone'
+};
